@@ -13,7 +13,7 @@ services:
       - "traefik.docker.network=proxy"
       - "traefik.http.routers.claude_simweb_sql-secure.entrypoints=websecure"
       - "traefik.http.routers.claude_simweb_sql-secure.middlewares=user-auth@file"
-      - "traefik.http.routers.claude_simweb_sql-secure.rule=Host(`sql.${DOMAIN}`)"
+      - "traefik.http.routers.claude_simweb_sql-secure.rule=Host(`db.${DOMAIN}`)"
 
 
 networks:
